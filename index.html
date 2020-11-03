@@ -1,0 +1,48 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>JavaScript & BootStrap</title>
+    <link rel="stylesheet" href="lib/style.css">
+    <script src="code.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" >
+    <link href="bootstrap.css" rel="stylesheet" media="screen">
+    <script src="https://public.tableau.com/javascripts/api/tableau-2.6.0.min.js"></script>
+  </head>
+
+   <body onload="initViz();">
+
+      <div class="container">
+        <div class="row">
+
+          <div class="span3"></div>
+        <h2 class="span7 pagination-centered">
+          JavaScript in Action
+        </h2>
+        </div>
+
+        <div class="row">
+          <ul id="menu" class="nav nav-list span2">
+            <li class="nav-header">Switching Views</li>
+            <ul>
+
+              <li><a onclick="switchView('treeMap')"> Line Chart</a></li>
+              <li><a onclick="switchView('treeMap')"> Line Chart</a></li>
+              <li><a onclick="switchView('wordCloud')"> Line Chart</a></li>
+
+            </ul>
+              <br>
+
+            <li class="nav-header">Filtering & Selection</li>
+            <ul>
+              <li> <a onclick="show('Category','Book')"> Show Books</a> </li>
+              <li> <a onclick="selectMarks('Category','Electronics')"> Select Electronics Marks</a> </li>
+            </ul>
+
+          </ul>
+        </div>
+      </div>
+
+<div id="myViz"></div>
+  </body>
+</html>
